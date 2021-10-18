@@ -1,95 +1,306 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-s.googleapis.com/css?@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+:root {
+    --color-black: #0B0C10;
+    --color-darkblue: #1F2833;
+    --color-grey: #C5C6C7;
+    --color-lightblue: #66FCF1;
+    --color-paleblue: #45A29E;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    min-height: 75px;
-    padding: 0px 20px;
+#header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 20px;
     align-items: center;
-    background-color: rgb(51, 149, 179);
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background-color: #0B0C10;
+    max-width: 100%;
 }
 
-#page-wrapper {
-    position: relative;
+h1 {
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-    background-color: black;
-    font-family: 'Architects Daughter', sans-serif;
-}
-
-.Submitbutton {}
-
-@media (max-width: 650px) {
-    .logo {
-        margin-top: 15px;
-        width: 100%;
-        position: relative;
-    }
-}
-
-.logo {
-    width: 60vw;
-}
-
-.logo {
-    width: 100%;
+    background: #1F2833;
+    background-image: linear-gradient( 115deg, rgba(29, 31, 31, 0.8), rgba(56, 56, 58, 0.7)), url(https://trekamaze.com/wp-content/uploads/2021/07/angela-eiter-action-arco-italy-2014.jpg);
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100%;
-    max-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 20px;
+    width: 100%;
+    z-index: -1;
 }
 
-@media (max-width: 650px) {
-    .logo>img {
-        margin: 0 auto;
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+#nav-bar {
+    display: flex;
+    flex-grow: 1;
+    min-height: 80px;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+}
+
+#nav-bar ul {
+    text-align: center;
+}
+
+#horizontal-list {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    color: #66FCF1;
+}
+
+.form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    font-size: 35px;
+}
+
+.form p {
+    color: #66FCF1;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+}
+
+.form form input {
+    display: block;
+}
+
+.form form input:first-child {
+    margin-bottom: 20px;
+    max-width: 300px;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+.form form input:last-child {
+    margin-bottom: 20px;
+    background-color: #45A29E;
+    color: #0B0C10;
+    padding: 4px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+}
+
+#features {
+    max-width: 100%;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: #45A29E;
+}
+
+#features .card {
+    display: flex;
+    align-items: center;
+}
+
+#features .card .icon {
+    max-width: 100%;
+    width: 100%;
+    display: none;
+}
+
+#features .card .content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#features .climbingicon1 {
+    image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMT-ROS9c_YFLQ-v7ekpZp2XSWfPisFCrauw&usqp=CAU)
+}
+
+#howitworks {
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pricing .card {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #0B0C10;
+}
+
+#pricing .card h2 {
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#beginner h2 {
+    background-color: rgb(9, 157, 100);
+}
+
+#intermediate h2 {
+    background-color: rgb(9, 85, 157);
+}
+
+#advanced h2 {
+    background-color: rgb(157, 44, 9);
+}
+
+#pricing .card li {
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 2.5em;
+}
+
+#pricing .card button {
+    border: 0;
+    margin: 15px;
+    background-color: #45A29E;
+    padding: 8px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #C5C6C7;
+    max-width: 100%;
+}
+
+footer>ul {
+    padding: 0;
+}
+
+footer>ul li {
+    display: inline;
+}
+
+footer>ul li:not(last-child) {
+    margin-right: 10px;
+}
+
+footer>ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.copyright {
+    color: black;
+}
+
+@media (min-width: 550px) {
+    #features .card .icon {
+        display: block;
+    }
+    #features .card .content {
+        text-align: left;
     }
 }
 
-nav {
-    font-weight: 400;
-}
-
-@media (max-width: 650px) {
-    nav {
-        margin-top: 10px;
+@media (min-width: 600px) {
+    #header {
+        flex-direction: row;
+    }
+    #nav-bar ul {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 50px;
+        justify-content: flex-end;
     }
-    nav>ul {
-        width: 35vw;
-        display: flex;
+    #nav-bar ul li {
+        display: inline;
+        margin-right: 50px;
+    }
+    #nav-bar ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .form:not last-child {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 800px) {
+    #pricing {
         flex-direction: row;
-        justify-content: space-around;
+        align-self: center;
     }
-    nav li {
-        padding-bottom: 5px;
+    #pricing .card:not (last-child) {
+        margin-right: 15px;
     }
-}
-
-#box-1 {
-    background-color: dodgerblue;
-    width: 50%;
-    height: 50%;
-}
-
-#box-2 {
-    background-color: orangered;
-    width: 50%;
-    height: 50%;
 }
