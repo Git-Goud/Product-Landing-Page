@@ -9,33 +9,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
 </head>
-<div id="page-wrapper">
+<div id="main">
 
-    <body>
+    <body class="main">
         <header id="header">
-            <div class="logo"><img id="header-img" src="climbinglogo.png" alt="Climbing girl logo" />
+            <div id="img-div" class="logo"><img id="header-img" src="climbinglogo.png" alt="Climbing girl logo">
                 <h1>Goud Beta</h1>
             </div>
             <nav id="nav-bar">
-                <ul>
+                <ul id="horizontal-list">
                     <li><a class="nav-link" href="#features">Features</a></li>
-                    <li><a class="nav-link" href="#Howitworks">Howitworks</a></li>
-                    <li><a class="nav-link" href="#Pricing">Pricing</a>
-                    </li>
+                    <li><a class="nav-link" href="#howitworks">How it works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </header>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
-            <input id="submit" type="submit" value="Sign Up Now!" class="Submitbutton">
-        </form>
-        <section id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MwF6GGvvNoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="form">
+            <p>Let's send it! Sign up now!</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+                <input id="submit" type="submit" value="Sign Up Now!" class="Submitbutton" />
+            </form>
+        </div>
+        <div id="features">
+            <div class="card"></div>
+            <div class="icon"></div>
+            <div class="content">
+                <h2>Learn indoor and outdoor rock climbing!</h2>
+                <p>Not only will you learn how to boulder and sport climb in a gym, you will learn how to climb out doors on real rock! Once you have the basics down you can take what you've learned out doors at places like Joshua Tree National Park and
+                    other amazing locations!</p>
+            </div>
+            <div class="card"></div>
+            <div class="icon"></div>
+            <div class="content">
+                <h2>Learn Rock Climbing from the basics, intermediate and up to advanced!</h2>
+                <p>During your first classes you will learn the safety basics, how to use equipment, grading systems, ettiquete and proper techniques. Later you will learn more advanced techniques and training methods.</p>
+            </div>
+            <div class="card"></div>
+            <div class="icon"></div>
+            <div class="content">
+                <h2>No Equipment Necessary!</h2>
+                <p>Rock climbing equipment is included in your package such as climbing shoes, harness, helmet and other equipment. We want to make sure you absolutely love climbing before you commit to the necessities</p>
+                </p>
+            </div>
+        </div>
 
-        </section>
-        <script src=" " async defer>
-        </script>
+        <div id="howitworks">
+            <iframe id="video" width=" 560" height="315" src="https://www.youtube.com/embed/MwF6GGvvNoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="pricing">
+            <div id="beginner" class="card">
+                <h2>Beginner Training</h2>
+                <h3>$50/month</h3>
+                <ul>
+                    <li class="classdescripter">Includes bouldering and top-toping indoors!</li>
+                    <li class="classdescripter">Learn the basic safety measures, grading and holds.</li>
+                    <li class="classdescripter">Get familiar warm-ups, stretching, technique and basic climbing ettiquete.</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div id="intermediate" class="card">
+                <h2>Intermediate Training</h2>
+                <h3>$80/month</h3>
+                <ul>
+                    <li class="classdescripter">Learn how to lead climb and get certified!</li>
+                    <li class="classdescripter">Take your skills outdoors for bouldering and sport climbing!</li>
+                    <li class="classdescripter">Learn the best technique to improve efficiency!</li>
+
+                </ul>
+                <button>Select</button>
+            </div>
+            <div id="advanced" class="card">
+                <h2>Advanced Training</h2>
+                <h3>$120/month</h3>
+                <ul>
+                    <li class="classdescripter">Strength and power training
+                    </li>
+                    <li class="classdescripter">Power Endurance Traning
+                    </li>
+                    <li class="classdescripter">Hangboarding and conditioning training
+                    </li>
+                </ul>
+                <button>Select</button>
+            </div>
+        </div>
     </body>
+    <footer>
+        <ul>
+            <li><a href='#'>Privacy</a></li>
+            <li><a href='#'>Terms</a></li>
+            <li><a href='#'>Contact</a></li>
+        </ul>
+        <p class="copyright">Copyright 2021, Original Goudbeta</p>
+    </footer>
 </div>
+<script src="" async defer></script>
 
 </html>
